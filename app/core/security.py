@@ -1,6 +1,6 @@
 from datetime import datetime, timezone, timedelta
 from jose import jwt, JWTError
-from config import settings
+from app.core.config import settings
 
 # Creating token
 def create_token(data: dict, expire_minutes = 30):

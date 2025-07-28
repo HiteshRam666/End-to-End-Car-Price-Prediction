@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Header, HTTPException
 from config import settings
-from security import create_token, verify_token 
+from app.core.security import create_token, verify_token 
 
 def get_api_key(api_key: str = Header(...)):
     if api_key != settings.API_KEY:
