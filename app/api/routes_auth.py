@@ -8,7 +8,6 @@ class AuthInput(BaseModel):
     username: str
     password: str
 
-
 @router.post('/login')
 def login(auth: AuthInput):
     if (auth.username == 'admin') and (auth.password == "admin"):
