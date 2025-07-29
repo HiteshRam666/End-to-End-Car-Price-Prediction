@@ -2,7 +2,7 @@
 
 An end-to-end production-ready API that serves machine learning predictions with robust features including authentication, Redis caching, Prometheus monitoring, and Dockerized deployment. Built using **FastAPI**.
 
-Demo Link: https://end-to-end-car-price-prediction.onrender.com
+Demo Link: https://end-to-end-car-price-prediction.onrender.com/docs
 
 ---
 
