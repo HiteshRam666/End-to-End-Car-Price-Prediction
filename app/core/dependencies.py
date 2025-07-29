@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Header, HTTPException
-from config import settings
+from app.core.config import settings
 from app.core.security import create_token, verify_token 
 
 def get_api_key(api_key: str = Header(...)):

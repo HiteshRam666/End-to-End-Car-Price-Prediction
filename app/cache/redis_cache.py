@@ -1,8 +1,13 @@
 import json 
 import redis
+import os
 from app.core.config import settings
+from dotenv import load_dotenv 
+load_dotenv()
 
-redis_client = redis.Redis.from_url(settings.REDIS_URL)
+REDIS_URL = os.getenv("REDIS_URL")
+
+redis_client = redis.StrictRedis.from_url(REDIS_URL, decode_responses = True)
 
 def get_cached_predicion(key: str):
     value = redis_client.get(key)
